@@ -1,5 +1,7 @@
 export default  function Detalhes(){
     return(
-        <div></div>
+        <div>
+            <h1>Detalhes</h1>
+        </div>
     )
 }

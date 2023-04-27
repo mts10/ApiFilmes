@@ -1,5 +1,7 @@
 export default  function Cadastro(){
     return(
-        <div></div>
+        <div>
+            <h1>Cadastre-se</h1>
+        </div>
     )
 }
