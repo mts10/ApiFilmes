@@ -1,13 +1,14 @@
-.form-group{
+.pricing-header1{
     background-color: aliceblue;
     padding: 10px;
-    border-radius: 10px;
-    text-align: center;
-    display: block;
+    border-radius: 10px; 
+    height: 550px;
+    width: 600px;     
 }
 .label, input{
     padding: 2px;
     margin: 5px;
+color: aliceblue;
 }
 .btn{
     padding: 5px;
