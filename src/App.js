@@ -5,6 +5,7 @@ import Header from './componentes/Header';
 import Cadastro from './pages/cadastro';
 import Home from './pages/home';
 import Detalhes from './pages/detalhes';
+import Footer from './componentes/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path='cadastro' element={<Cadastro/>}/>
           <Route path='*' element={<h1>Pagina nao encontrada!</h1>}/>
         </Routes>
+        <Footer />
     </Router>
     
   );

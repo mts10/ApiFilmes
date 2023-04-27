@@ -1,0 +1,15 @@
+.form-group{
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    display: block;
+}
+.label, input{
+    padding: 2px;
+    margin: 5px;
+}
+.btn{
+    padding: 5px;
+    margin: 10px;
+}
