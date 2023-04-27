@@ -30,8 +30,6 @@ export default  function Cadastro(){
                     <button type="button" class="btn btn-secondary">Plus</button>
                     </div>
                     <br />      
-                </form>
-                <form class="needs-validation">
                     <h4>Dados do cartão</h4>
                     <label>
                         Numero do cartão:
@@ -49,7 +47,7 @@ export default  function Cadastro(){
                     </label>
                     <br />
                 </form>
-                <button type="submit" class="btn btn-dark">Assinar</button>
+                <button type="submit" class="btn btn-primary">Assinar</button>
             </div></>
         
     )
