@@ -8,12 +8,11 @@ import Detalhes from './pages/detalhes';
 
 function App() {
   return (
-    
        <Router>
       <Header/>
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='detalhes/:filme' element={<Detalhes />} />
+          <Route path='detalhes' element={<Detalhes />} />
           <Route path='cadastro' element={<Cadastro/>}/>
           <Route path='*' element={<h1>Pagina nao encontrada!</h1>}/>
         </Routes>
