@@ -9,8 +9,6 @@ h1 {
   }
   
 `
-
-
 export const MovieList = styled.ul`
 list-style: none;
   
@@ -23,4 +21,8 @@ column-gap: 3rem;
 
 row-gap: 4rem;
 
+`
+export const OrderByContainer = styled.div`
+  margin-top: -50px;
+  padding: 30px;
 `

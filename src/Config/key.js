@@ -1,5 +1,5 @@
 import React from 'react';
-import Home from '../pages/Home/index.js';
+import Home from '../pages/home';
 
 const Keys = () => {
     const options = {

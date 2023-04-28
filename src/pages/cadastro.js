@@ -44,9 +44,7 @@ function Cadastro() {
 
 
   const location = useLocation();
-  const url = location.pathname;
-
-  const showButton = url != "/cadastro";
+  const url = location.pathname; 
 
 
   return (
@@ -94,15 +92,11 @@ function Cadastro() {
         </div>
       </div>
       <div>
-
         <div>
           < ButtonCadastro/>
         </div>
         <div className="mt-5 text-center">
-
-          {showButton && (
-            <button className="btn">Assinar</button>
-          )}
+            <button class="btn btn-success">Assinar</button>
         </div>
 
       </div>
