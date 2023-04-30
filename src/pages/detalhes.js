@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { Container } from "./styles";
+import comentarios from "../componentes/Comentarios";
 
 function Detalhes() {
     const { id } = useParams();
@@ -19,15 +20,27 @@ function Detalhes() {
             <div className="movies">
                 <img src={movies.poster} alt={movies.titulo} />
 
-                <div className="details">
-                    <h1>Título original: {movies.titulo}</h1>
+                <div className="detalhes">
+                    <h1>Título: {movies.titulo}</h1>
                     <span> Ano: {movies.ano}</span>
                     <span> Nota: {movies.nota}</span>
-                    <span>assistido: {movies.assistido}</span>
-
                     <Link to="/">
-                        <button variant="primary">Voltar</button>
+                        <button>Voltar</button>
                     </Link>
+                </div>
+                <div>
+                    <h2>Comentários:</h2>
+                    {comentarios.length > 0 ? (
+                        comentarios.map((comentario) => (
+                            <div key={comentario.id}>
+                                <p>
+                                    <strong>{comentario.usuario}:</strong> {comentario.mensagem}
+                                </p>
+                            </div>
+                        ))
+                    ) : (
+                        <p>Não identificams comentarios pra esse filme</p>
+                    )}
                 </div>
             </div>
         </Container>

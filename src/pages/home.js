@@ -5,7 +5,7 @@ import Keys from "../Config/key";
 import { useState } from "react";
 import React, { useEffect } from "react"
 import { Link } from "react-router-dom";
-
+import Assistido from "../componentes/Button/assistido";
 
 function Home() {
     const [movies, setMovies] = useState([]);
@@ -44,9 +44,16 @@ function Home() {
 
     const sortedMovies = [...movies].sort(compareMovies);
 
+    const handleAssistidoClick = (id) => {
+        setMovies(
+            movies.map((movie) =>
+                movie.id === id ? { ...movie, assistido: !movie.assistido } : movie
+            )
+        );
+    };
     return (
         <Container>
-            <h1>Filmes</h1>
+            <h1>Filmes disponiveis</h1>
             <OrderByContainer>
                 <div className="d-flex justify-content-end">
                     <div className="col-md-1">
@@ -73,6 +80,11 @@ function Home() {
                             </Link>
                             <span>{movie.titulo}</span>
                             <span>Nota: {movie.nota}</span>
+                            <Assistido
+                                assistido={movie.assistido}
+                                onClick={handleAssistidoClick}
+                                id={movie.id}
+                            />
                         </Movie>
                     );
                 })}

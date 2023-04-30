@@ -31,6 +31,9 @@ function Cadastro() {
   function handleNumerocvcChange(event) {
     setNumerocvc(event.target.value);
   }
+  function handleClick(){
+    alert ("Parabéns, plano assinado com sucesso!")
+}
 
 
   function handleNumeroCartaoChange(event) {
@@ -96,9 +99,8 @@ function Cadastro() {
           < ButtonCadastro/>
         </div>
         <div className="mt-5 text-center">
-            <button class="btn btn-success">Assinar</button>
+            <button class="btn" onClick={handleClick}>Assinar</button>
         </div>
-
       </div>
     </div>
 
