@@ -28,8 +28,11 @@ function Detalhes() {
                         <button>Voltar</button>
                     </Link>
                 </div>
-                <div>
-                    <h2>Comentários:</h2>
+               
+            </div>
+            <br/>
+            <div className="coments">
+                    <h2>Comentários</h2>
                     {comentarios.length > 0 ? (
                         comentarios.map((comentario) => (
                             <div key={comentario.id}>
@@ -42,7 +45,6 @@ function Detalhes() {
                         <p>Não identificams comentarios pra esse filme</p>
                     )}
                 </div>
-            </div>
         </Container>
     );
 }

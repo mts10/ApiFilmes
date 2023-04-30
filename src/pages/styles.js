@@ -5,6 +5,14 @@ export const Container = styled.div`
 h1 {
     margin: 3rem 0;
   }
+  h2{
+    margin: 1rem 0;
+    background-color: rgb(26, 14, 26);
+    color: white;
+   
+    border-radius: 5px;
+  }
+
   
   .movies {
     display: flex;
@@ -23,7 +31,17 @@ h1 {
     align-items: flex-start;
     margin-left: 5rem;
 
-
+  }
+  .coments{
+    flex-direction: column;
+    align-items: flex-start;  
+    margin-left: 35rem;
+    
+    display: flex;
+    flex-direction: column;
+    margin-right; 35rem;
+  }
+  
     
 button {
     font-size: 0.8rem;
