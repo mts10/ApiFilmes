@@ -4,12 +4,9 @@ export default function Footer() {
 
     return (
         <div className="container">
-            <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-                <div className="col-md-4 d-flex align-items-center">
-                    <a href="/" className="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                        <svg className="bi" width="30" height="24"></svg>
-                    </a>
-                    <span className="text-muted">© Dev Web Avançado</span>
+            <footer className="bg-light text-center text-lg-start">
+                <div className="text-center p-3">
+                    <span className="text-center p-3">© Desenvolvido por Matheus Saimon e Arthur Felipe</span>
                 </div>
             </footer>
         </div>

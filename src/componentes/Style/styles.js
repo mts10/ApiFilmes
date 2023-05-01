@@ -9,6 +9,7 @@ h1 {
   }
   
 `
+
 export const MovieList = styled.ul`
 list-style: none;
   
