@@ -5,6 +5,8 @@ import Keys from "../Config/key";
 import { useState } from "react";
 import React, { useEffect } from "react"
 import { Link } from "react-router-dom";
+import Assistido from "../componentes/Button/assistido";
+
 
 
 
@@ -14,6 +16,7 @@ function Home() {
     const [orderDirection, setOrderDirection] = useState('asc');
     const [searchTerm, setSearchTerm] = useState("");
     const [filteredMovies, setFilteredMovies] = useState([]);
+
 
     
 
@@ -100,7 +103,13 @@ function Home() {
     const moviesToShow = filteredMovies.length > 0 ? filteredMovies : sortedMovies;
 
   
-
+    const handleAssistidoClick = (id) => {
+        setMovies(
+            movies.map((movie) =>
+                movie.id === id ? { ...movie, assistido: !movie.assistido } : movie
+            )
+        );
+    };
   
         return (
         <Container>
@@ -144,6 +153,11 @@ function Home() {
                             </Link>
                             <span>{movie.titulo}</span>
                             <span>Nota: {movie.nota}</span>
+                            <Assistido
+                                assistido={movie.assistido}
+                                onClick={handleAssistidoClick}
+                                id={movie.id}
+                            />
                         </Movie>
                     );
                 })}
