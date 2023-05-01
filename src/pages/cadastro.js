@@ -82,7 +82,7 @@ function Cadastro() {
           </div>
           <div className="mt-3">
             <label htmlFor="nameInput">Nome do Cartão:</label><br />
-            <input class="form-control" placeholder="Nome do cartão do usuário" id="NomeCartaoInput" type="number" value={nomeCartao} onChange={handleNomeCartaocvcChange} /> <br />
+            <input class="form-control" placeholder="Nome do cartão do usuário" id="NomeCartaoInput" type="text" value={nomeCartao} onChange={handleNomeCartaocvcChange} /> <br />
           </div>
           <div className="mt-3">
             <label htmlFor="nameInput">Número do Cartão:</label><br />
