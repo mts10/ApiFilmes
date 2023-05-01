@@ -82,11 +82,11 @@ function Cadastro() {
           </div>
           <div className="mt-3">
             <label htmlFor="nameInput">Nome do Cartão:</label><br />
-            <input class="form-control" placeholder="Nome do cartão do usuário" id="NomeCartaoInput" type="number" value={nomeCartao} onChange={handleNomeCartaocvcChange} /> <br />
+            <input class="form-control" placeholder="Nome do cartão do usuário" id="NomeCartaoInput" type="text" value={nomeCartao} onChange={handleNomeCartaocvcChange} /> <br />
           </div>
           <div className="mt-3">
             <label htmlFor="nameInput">Número do Cartão:</label><br />
-            <input className="form-control" placeholder="Número do cartão do usuário" id="NumeroCartaoInput" type="text" maxLength={19} value={numeroCartao} onChange={handleNumeroCartaoChange} /> <br />
+            <input className="form-control" placeholder="Número do cartão do usuário" id="NumeroCartaoInput" type="number" maxLength={19} value={numeroCartao} onChange={handleNumeroCartaoChange} /> <br />
           </div>
           <div className="mt-3">
             <label htmlFor="NumerocvcInput">Número do CVC:</label><br />
