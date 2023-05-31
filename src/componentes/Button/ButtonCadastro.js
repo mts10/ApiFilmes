@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Button from "./Button";
 
-function ButtonCadastro(props) {
+function  ButtonCadastro(props) {
   const [selectedButton, setSelectedButton] = useState("button1");
 
   function handleButtonClick(button) {
@@ -14,8 +14,8 @@ function ButtonCadastro(props) {
         <label htmlFor="NumerocvcInput">Selecione um Plano:</label>
         <br />
         <div className="mt-3">
-          <Button label="Free" isSelected={selectedButton === "button1"} onClick={() => handleButtonClick("button1")} />
-          <Button label="Plus" isSelected={selectedButton === "button2"} onClick={() => handleButtonClick("button2")} />
+          <Button label="Ativo" isSelected={selectedButton === "button1"} onClick={() => handleButtonClick("button1")} />
+          <Button label="Inativo" isSelected={selectedButton === "button2"} onClick={() => handleButtonClick("button2")} />
         </div>
       </div>
     </div>
